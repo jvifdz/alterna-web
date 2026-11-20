@@ -1,0 +1,1 @@
+var e=new Map,t=(e,t,n,r)=>`${e}|${t}|${n}|${r}`;function n(t){let n=e.get(t);return n&&{shifts:n.shifts,stale:Date.now()-n.at>12e4}}function r(t,n){for(e.delete(t),e.set(t,{shifts:n,at:Date.now()});e.size>8;)e.delete(e.keys().next().value)}function i(){e.clear()}export{r as i,n,t as r,i as t};

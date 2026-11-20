@@ -1,0 +1,3 @@
+import{n as e,p as t,t as n}from"./dates-BoqfBCbi.js";function r(r){let i=t(r);return{from:i,to:n(e(i,1),-1)}}function i(e){return(Math.round(e*100)/100).toLocaleString(`es-ES`,{maximumFractionDigits:2})}function a(e){let t=typeof e==`number`?i(e):e;return typeof e==`string`&&/^[=+\-@\t\r]/.test(t)&&(t=`'${t}`),/[;"\n\r]/.test(t)?`"${t.replace(/"/g,`""`)}"`:t}function o(e){return`﻿`+[[`Persona`,`Horas`,`Horas nocturnas`,`Horas domingo y festivo`,`Turnos`],...e.members.map(e=>[e.displayName,e.totalHours,e.nightHours,e.sundayHolidayHours,e.shiftCount]),[`Total`,e.total.totalHours,e.total.nightHours,e.total.sundayHolidayHours,e.total.shiftCount]].map(e=>e.map(a).join(`;`)).join(`\r
+`)+`\r
+`}export{o as n,r,i as t};

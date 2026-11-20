@@ -1,0 +1,1 @@
+var e={Morning:`yellow`,Afternoon:`orange`,Night:`indigo`,Split:`magenta`,OnCall:`red`,Other:`mint`,Vacation:`sky`,DayOff:null},t=new Set([`amber`,`coral`,`red`,`pink`,`purple`,`blue`,`teal`,`green`,`gray`,`yellow`,`orange`,`brown`,`magenta`,`lime`,`indigo`,`sky`,`mint`,`slate`]);function n(n,r){let i=n&&t.has(n)?n:e[r??`Other`]??null;return i?`c-${i}`:null}export{n as t};
